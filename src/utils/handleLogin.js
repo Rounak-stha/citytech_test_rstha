@@ -17,5 +17,7 @@ export async function handleLogin(userId, userPass) {
 	localStorage.setItem('email', login_id)
 	localStorage.setItem('picture', profile_picture)
 	localStorage.setItem('token', jwt_token)
+
+	// set data to auth context
 	return true
 }
